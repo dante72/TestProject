@@ -103,19 +103,19 @@ namespace TestProject
             var equilateral = triangle.CheckType<EquilateralTriangle>();
             if (equilateral != null)
             {
-                TestContext.WriteLine($"\nТреугольник является равносторонним со стороной {equilateral.Side}");
+                TestContext.WriteLine($"\nРўСЂРµСѓРіРѕР»СЊРЅРёРє СЏРІР»СЏРµС‚СЃСЏ СЂР°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёРј СЃРѕ СЃС‚РѕСЂРѕРЅРѕР№ {equilateral.Side}");
             }
 
             var isosceles = triangle.CheckType<IsoscelesTriangle>();
             if (isosceles != null)
             {
-                TestContext.WriteLine($"\nТреугольник является равнобедренным со бедром {isosceles.Side1.Length} и основанием {isosceles.Base.Length}");
+                TestContext.WriteLine($"\nРўСЂРµСѓРіРѕР»СЊРЅРёРє СЏРІР»СЏРµС‚СЃСЏ СЂР°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Рј СЃРѕ Р±РµРґСЂРѕРј {isosceles.Side1.Length} Рё РѕСЃРЅРѕРІР°РЅРёРµРј {isosceles.Base.Length}");
             }
 
             var right = triangle.CheckType<RightTriangle>();
             if (right != null)
             {
-                TestContext.WriteLine($"Треугольник является прямоугольным со катетами {right.Leg1.Length} и {right.Leg2.Length}, и гипотенузой {right.Hypotenuse.Length}");
+                TestContext.WriteLine($"РўСЂРµСѓРіРѕР»СЊРЅРёРє СЏРІР»СЏРµС‚СЃСЏ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Рј СЃРѕ РєР°С‚РµС‚Р°РјРё {right.Leg1.Length} Рё {right.Leg2.Length}, Рё РіРёРїРѕС‚РµРЅСѓР·РѕР№ {right.Hypotenuse.Length}");
             }
         }
 
@@ -124,13 +124,13 @@ namespace TestProject
             var square = q.CheckType<Square>();
             if (square != null)
             {
-                TestContext.WriteLine($"\nЧетырехугольник является квадратом со стороной {square.Side}");
+                TestContext.WriteLine($"\nР§РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРє СЏРІР»СЏРµС‚СЃСЏ РєРІР°РґСЂР°С‚РѕРј СЃРѕ СЃС‚РѕСЂРѕРЅРѕР№ {square.Side}");
             }
 
             var trapezoid = q.CheckType<Trapezoid>();
             if (trapezoid != null)
             {
-                TestContext.WriteLine($"\nЧетырехугольник является трапецией со бедрами {trapezoid.Legs[0].Length} и {trapezoid.Legs[1].Length}, и основаниями {trapezoid.Bases[0].Length} и {trapezoid.Bases[1].Length}");
+                TestContext.WriteLine($"\nР§РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРє СЏРІР»СЏРµС‚СЃСЏ С‚СЂР°РїРµС†РёРµР№ СЃРѕ Р±РµРґСЂР°РјРё {trapezoid.Legs[0].Length} Рё {trapezoid.Legs[1].Length}, Рё РѕСЃРЅРѕРІР°РЅРёСЏРјРё {trapezoid.Bases[0].Length} Рё {trapezoid.Bases[1].Length}");
             }
         }
     }
